@@ -1,0 +1,138 @@
+:root {
+  --my-primary-color: #21201c;
+}
+html {
+  font-size: 18px !important;
+}
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+header {
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+header.scrolled {
+  background-color: white; /* Example */
+}
+ul {
+  margin: 0 !important;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: lightgreen;
+    }
+  }
+}
+
+#content-container {
+  width: 30rem;
+}
+
+#hero {
+  background-image: url("./imgs/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#hero article {
+  background-color: #21201c8c;
+  height: 100vh;
+  padding: 0px 4rem;
+}
+
+#brands {
+  overflow: hidden;
+  width: 100%;
+}
+
+#slider-track {
+  display: flex;
+  width: max-content;
+  animation: slide 14s linear infinite;
+}
+
+#brands article {
+  display: flex;
+  gap: 2rem;
+}
+#brands img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#feature-card-1 {
+  background-image: url("./imgs/feature-1.jpg");
+}
+#feature-card-2 {
+  background-image: url("./imgs/feature-2.jpg");
+}
+#feature-card-3 {
+  background-image: url("./imgs/feature-3.jpg");
+}
+
+#algeria-clinic-features {
+  .card {
+    color: white;
+    border: none !important;
+    height: 28rem;
+    /* width: 100%; */
+    padding: 0;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .card-img-top {
+    object-fit: cover;
+    height: 12rem;
+  }
+
+  .card-body h5 {
+    font-weight: bold;
+    /* height: 100%; */
+  }
+
+  .card-body {
+    background-color: rgba(0, 0, 0, 0.712);
+    padding: 1.4rem !important;
+  }
+}
+
+#algeria-clinic-features {
+  background-color: var(--my-primary-color);
+  padding: 4rem 2rem;
+}
+/*=============================================================================================*/
+/* animations */
+/*=============================================================================================*/
+@keyframes slide {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/*=============================================================================================*/
+/* media screens */
+/*=============================================================================================*/
+
+@media screen and (max-width: 500px) {
+  #hero article {
+    padding: 0 1rem;
+  }
+  #content-container {
+    width: 100%;
+  }
+}
