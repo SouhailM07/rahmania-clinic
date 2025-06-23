@@ -32,13 +32,29 @@
       <nav class="d-flex justify-content-between align-items-center">
         <h1>Clinic</h1>
         <ul class="d-lg-flex d-none align-items-end list-unstyled gap-5">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#prices">Prices</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="btn btn-success">Dashboard</button>
+        <ul
+          id="menu-list"
+          style="left: 0; height: 100vh; background-color: #1416198a"
+          class="w-100 text-white visually-hidden position-absolute top-0 d-flex flex-column list-unstyled align-items-center justify-content-center gap-5"
+        >
+          <li><a href="#">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a class="btn btn-success" href="dashboard.html">Dashboard</a>
+          <button id="menu-btn" class="btn btn-success d-lg-none d-block">
+            menu
+          </button>
+        </div>
       </nav>
     </header>
     <main>
@@ -74,7 +90,7 @@
             <img src="./imgs/logo4.png" alt="logo" />
           </article>
           <!-- duplicated for loop -->
-          <article>
+          <article id="">
             <img src="./imgs/logo1.png" alt="logo" />
             <img src="./imgs/logo2.png" alt="logo" />
             <img src="./imgs/logo3.png" alt="logo" />
@@ -90,7 +106,7 @@
       <!-- /*=============================================================================================*/ -->
       <!-- /* comment */ -->
       <!-- /*=============================================================================================*/ -->
-      <section id="algeria-clinic-features" class="">
+      <section id="features" class="">
         <h1 class="text-white text-center mb-5">
           Leading Healthcare Expertise in Algeria
         </h1>
@@ -152,7 +168,7 @@
       <!-- /*=============================================================================================*/ -->
       <!-- /* Affordable Healthcare Plans */ -->
       <!-- /*=============================================================================================*/ -->
-      <section class="py-5 my-5 bg-light">
+      <section id="prices" class="py-5 my-5 bg-light">
         <div class="container">
           <h2 class="text-center mb-5 fw-bold">Affordable Healthcare Plans</h2>
           <div class="row justify-content-center row-cols-lg-3 row-cols-1">
@@ -211,7 +227,7 @@
       </section>
       <!--  -->
       <div
-        id="carouselExampleIndicators"
+        id="testimonials"
         class="carousel slide my-5"
         data-bs-ride="carousel"
       >
@@ -320,7 +336,7 @@
             Reach out to Learning Project in Algeria for your healthcare service
             needs.
           </p>
-          <form>
+          <form id="contact">
             <div class="mb-3">
               <input type="text" class="form-control" placeholder="Name" />
             </div>

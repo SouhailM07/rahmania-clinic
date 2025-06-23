@@ -1,6 +1,7 @@
 :root {
   --my-primary-color: #21201c;
 }
+
 html {
   font-size: 18px !important;
 }
@@ -80,7 +81,7 @@ ul {
   background-image: url("./imgs/feature-3.jpg");
 }
 
-#algeria-clinic-features {
+#features {
   .card {
     color: white;
     border: none !important;
@@ -108,7 +109,7 @@ ul {
   }
 }
 
-#algeria-clinic-features {
+#features {
   background-color: var(--my-primary-color);
   padding: 4rem 2rem;
 }
